@@ -23,8 +23,6 @@ stop_threads = False  # Variable para detener los threads
 # Lock para sincronizar el acceso a las funciones de entrada y salida
 queue_lock = threading.Lock()
 
-
-
 class Worker(QObject):
     # Define una señal que puedes emitir desde el hilo secundario
     update_gui = Signal()
